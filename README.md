@@ -20,7 +20,7 @@ social media와 deel learning을 이용한 mental disorder 예측
 ### 데이터 수집
 Reddit pushshift API을 이용해 2015년 9월 23일 ~ 2020년 9월 23일까지의 정신질환 하위레딧 게시글을 수집힌다.   
 
-**데이터 종류**    
+**1) 데이터 종류**    
 ```
 1) adhd_origin.csv: subreddit이 adhd인 경우   
 2) anxiety_origin.csv: subreddit이 anxiety인 경우     
@@ -30,15 +30,34 @@ Reddit pushshift API을 이용해 2015년 9월 23일 ~ 2020년 9월 23일까지�
 6) non-health.csv: subreddit이 subreddit이 fitness, jokes, meditation, parenting, relationship, teaching인 경우
 ```
 
-**데이터 샘플**
-| 	 |subreedit	|author	|title	|content	|date	|
+**2) 데이터 샘플**
+| 	 |subreedit	|author	|title	|text_content	|date	|
 |----|------|---------|---------------|---------|-----------|    
 
 
-**데이터 사이즈**
+**3) 데이터 사이즈**
 | 	 |ADHD	|Anxiety	|Bipolar	|Depression	|Depression	|non-health    |
 |----|------|---------|---------------|---------|-----------|--------------|
 |size|256065|298852   |162986	|720434	|60009	|425346	|    
+
+### 데이터 전처리
+
+**1) 데이터 전처리 항목**
+```
+1) Null 값 제거
+2) 사용자별로 게시글이 10개 이상 작성한 사용자만 남기기
+3) title과 text_content를 합친 'content' 행 만들기
+```
+
+**2)데이터 샘플**
+| 	 |subreedit	|author	|title	|text_content	|date	|content|
+|----|------|---------|---------------|---------|-----------|----------|   
+
+**3)데이터 사이즈**
+| 	 |ADHD	|Anxiety	|Bipolar	|Depression	|Depression	|non-health    |
+|----|------|---------|---------------|---------|-----------|--------------|
+|size|48147|40158   |65460	|157213	|20614	|425341	|    
+
 
 ### feature 추출
 **감정분석**
