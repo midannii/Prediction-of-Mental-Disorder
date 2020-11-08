@@ -1,5 +1,5 @@
 # Prediction-of-Mental-Disorder
-social media와 deel learning을 이용한 mental disorder 예측 
+social media와 deel learning을 이용한 mental disorder 예측
 
 
 # 연구 목표
@@ -16,7 +16,7 @@ social media와 deel learning을 이용한 mental disorder 예측
 
 ### 연구질문
 : 정신질환과 관련된 주제의 게시글을 이용해 정신질환을 예측할 수 있을까?   
-  
+
 ### 데이터 수집
 Reddit pushshift API을 이용해 2015년 9월 23일 ~ 2020년 9월 23일까지의 정신질환 하위레딧 게시글을 수집힌다.   
 
@@ -26,7 +26,7 @@ Reddit pushshift API을 이용해 2015년 9월 23일 ~ 2020년 9월 23일까지�
 2) anxiety_origin.csv: subreddit이 anxiety인 경우     
 3) bipolar_origin.csv: subreddit이 bipolar인 경우   
 4) depression_origin.csv: subreddit이 depression인 경우
-5) schizo_origin.csv: subreddit이 schizophrenia인 경우 
+5) schizo_origin.csv: subreddit이 schizophrenia인 경우
 6) non-health.csv: subreddit이 subreddit이 fitness, jokes, meditation, parenting, relationship, teaching인 경우
 ```
 
@@ -63,6 +63,7 @@ Reddit pushshift API을 이용해 2015년 9월 23일 ~ 2020년 9월 23일까지�
 **감정분석**
 
 **감정분류**
+- 연구 방법: LIWC-alike, empaths
 
 **토픽모델링**
 - 연구 방법: LDA, LSA
