@@ -29,7 +29,7 @@
 
 ```
 
-  - Sentimental classificatino(5)을 위해 [emotional wheel](https://www.healthline.com/health/emotion-wheel)을 바탕으로, [empath](https://github.com/Ejhfast/empath-client) module을 이용하여 자체적인 sentimental lexicon 구축을 시도했지만, `LIWC-alike`에서 제공하는 sentimental classification에서 해당 내용뿐 아니라 감정의 격양 정도까지 반영한 lexicon을 이용하였음을 고려하여, LIWC-alike를 채택하였습니다. 
+  - Sentimental classificatino(5)을 위해 [emotional wheel](https://www.healthline.com/health/emotion-wheel)을 바탕으로, [empath](https://github.com/Ejhfast/empath-client) module을 이용하여 자체적인 sentimental lexicon 구축을 시도했지만, `LIWC-alike`에서 제공하는 sentimental classification에서 [해당 내용뿐 아니라 감정의 격양 정도까지 반영한 lexicon](https://rdrr.io/github/kbenoit/quanteda.dictionaries/man/data_dictionary_NRC.html)을 이용하였음을 고려하여, LIWC-alike를 채택하였습니다. 
   
 
 이후 `final_statistic_analysis.ipynb`를 이용해 통계학적 의미를 도출합니다. 
