@@ -42,20 +42,22 @@
   3) 1), 2) 의 결과에 따라 어떤 통계 방법을 이용할지 결정
   
   4-1) 
-     (1) 전체 data에 대해 Kruskal-Wallis (KW) test
-     
-        - 대부분 normality, homogeneity of variance test를  모두 만족하지 못했기 때문
+     [1] 전체 data에 대해 Kruskal-Wallis (KW) test
     
-     (2) 추가적으로 두 subreddit끼리 Mann–Whitney U test
+      
+   * 대부분 normality, homogeneity of variance test를  모두 만족하지 못했기 때문
+    
+    
+     [2] 추가적으로 두 subreddit끼리 Mann–Whitney U test
      
      
   4-2)  t-test (heteroscedasticity)
     
-      normality를 만족하지 못하더라도, central limit theorem에 의해 sample size가 큰 경우 normal distribution으로 추정 가능. 따라서 이를 이용해 이분산 t-test를 수행 
+   * normality를 만족하지 못하더라도, central limit theorem에 의해 sample size가 큰 경우 normal distribution으로 추정 가능. 따라서 이를 이용해 이분산 t-test를 수행 
         
   4-3) chi-square test with Word Count
   
-     Word Count는 nominal data이므로, nonMH를 기준으로 같은 분포를 가지고 있는지를 chi-square로 검정 
+   *  Word Count는 nominal data이므로, nonMH를 기준으로 같은 분포를 가지고 있는지를 chi-square로 검정 
      
 <br>
 
