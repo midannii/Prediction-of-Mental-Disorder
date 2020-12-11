@@ -5,6 +5,8 @@
 [LIWC 의 기능을 제공하는 모듈](https://github.com/kbenoit/LIWCalike)을 이용하거나 직접 구현 하였다. 
 
 
+<br>
+
 
 ## workflow
 
@@ -64,3 +66,7 @@
 이러한 분석결과를 잘 보여줄 수 있도록 `barplot with error bar`, `boxplot` 등으로 시각화하였습니다. 
 
 
+
+<br>
+
+같은 방법으로, 정신질환 subreddit의 author가 해당 정신질환을 인지하기 전과 후의 작성 게시글에서의 언어학적 차이를 비교분석하였습니다. 
