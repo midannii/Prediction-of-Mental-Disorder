@@ -10,7 +10,9 @@
 
 ## workflow
 
-우선 `EDA.ipynb`으로 각 subreddit의 데이터의 크기를 확인합니다. 이후 `final_replace_LIWC.ipynb`와 `finally_liwc_alike.R`을 이용하여 언어학적 특징을 도출합니다. 
+1. `EDA.ipynb`으로 각 subreddit의 데이터의 크기를 확인합니다.
+
+2. `final_replace_LIWC.ipynb`와 `finally_liwc_alike.R`을 이용하여 언어학적 특징을 도출합니다. 
 
 도출한 내용은 아래와 같습니다.
 
@@ -34,7 +36,7 @@
   - Sentimental classificatino(5)을 위해 [emotional wheel](https://www.healthline.com/health/emotion-wheel)을 바탕으로, [empath](https://github.com/Ejhfast/empath-client) module을 이용하여 자체적인 sentimental lexicon 구축을 시도했지만, `LIWC-alike`에서 제공하는 sentimental classification에서 [해당 내용뿐 아니라 감정의 격양 정도까지 반영한 lexicon](https://rdrr.io/github/kbenoit/quanteda.dictionaries/man/data_dictionary_NRC.html)을 이용하였음을 고려하여, LIWC-alike를 채택하였습니다. 
   
 
-이후 `final_statistic_analysis.ipynb`를 이용해 통계학적 의미를 도출합니다. 
+3. `final_statistic_analysis.ipynb`를 이용해 통계학적 의미를 도출합니다. 
 
 
   1) 1. ~ 7. 의 linguistic features 에서, 각 subreddit끼리의 normality check (based on D’Agostino and Pearson’s)
@@ -63,10 +65,10 @@
      
 <br>
 
-이러한 분석결과를 잘 보여줄 수 있도록 `barplot with error bar`, `boxplot` 등으로 시각화하였습니다. 
+4. 이러한 분석결과를 잘 보여줄 수 있도록 `barplot with error bar`, `boxplot` 등으로 시각화하였습니다. 
 
 
 
 <br>
 
-같은 방법으로, 정신질환 subreddit의 author가 해당 정신질환을 인지하기 전과 후의 작성 게시글에서의 언어학적 차이를 비교분석하였습니다. 
+5. 같은 방법으로, 정신질환 subreddit의 author가 해당 정신질환을 인지하기 전과 후의 작성 게시글에서의 언어학적 차이를 비교분석하였습니다. 
