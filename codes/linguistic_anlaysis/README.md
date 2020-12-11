@@ -39,11 +39,11 @@
 3. `final_statistic_analysis.ipynb`를 이용해 통계학적 의미를 도출합니다. 
 
 
-     1) 1. ~ 7. 의 linguistic features 에서, 각 subreddit끼리의 normality check (based on D’Agostino and Pearson’s)
+       (1) 1. ~ 7. 의 linguistic features 에서, 각 subreddit끼리의 normality check (based on D’Agostino and Pearson’s)
    
-     2) 1. ~ 7. 의 linguistic features 에서, 각 subreddit끼리의 Homogeneity of variance test (with levene test)
+       (2) 1. ~ 7. 의 linguistic features 에서, 각 subreddit끼리의 Homogeneity of variance test (with levene test)
 
-     3) 1), 2) 의 결과에 따라 어떤 통계 방법을 이용할지 결정
+       (3) 1), 2) 의 결과에 따라 어떤 통계 방법을 이용할지 결정
   
      4-1) 
           
